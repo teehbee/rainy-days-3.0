@@ -12,9 +12,9 @@ const jacketWomenContainer = document.querySelector(".jackets-for-sale");
         console.log(jacketForWomen[i]);
 
         jacketWomenContainer.innerHTML += `
-        <div class="jacket-tile"><a href="../jacket-specific.html"><img src="${jacketForWomen[i].image}" alt="${jacketForWomen[i].description}"></a>
+        <div class="jacket-tile"><a href="../jacket-specific.html?id=${jacketForWomen[i].id}"><img src="${jacketForWomen[i].image}" alt="${jacketForWomen[i].description}"></a>
         <div class="frontpage-product-title-and-heart">
-          <h3>${jacketForWomen[i].title}</h3>
+        <a href="../jacket-specific.html?id=${jacketForWomen[i].id}"><h3>${jacketForWomen[i].title}</h3></a>
           <i class="fa-regular fa-heart fa-lg"></i>
         </div>
         <p>USD ${jacketForWomen[i].price}</p>
@@ -24,7 +24,6 @@ const jacketWomenContainer = document.querySelector(".jackets-for-sale");
       console.log("Something is wrong");
       jacketWomenContainer.innerHTML = `<p>Something went wrong!</p>`;
     }
-  
   }
 
   womanPageJackets();

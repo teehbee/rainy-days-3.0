@@ -14,9 +14,9 @@ const jacketFrontPageContainer = document.querySelector(".frontpage-products");
         console.log(jacket[i]);
 
         jacketFrontPageContainer.innerHTML += `
-        <div class="frontpage-products-lower"><a href="jacket-specific.html"><img src="${jacket[i].image}" alt="${jacket[i].title}"></a>
+        <div class="frontpage-products-lower"><a href="jacket-specific.html?id=${jacket[i].id}"><img src="${jacket[i].image}" alt="${jacket[i].title}"></a>
         <div class="frontpage-product-title-and-heart">
-        <h4>${jacket[i].title}</h4>
+        <a href="jacket-specific.html?id=${jacket[i].id}"><h4>${jacket[i].title}</h4></a>
         <i class="fa-regular fa-heart fa-lg"></i></div>
         <p>USD ${jacket[i].price}</p>
         </div>`
