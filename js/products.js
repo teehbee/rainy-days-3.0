@@ -11,7 +11,6 @@ const jacketFrontPageContainer = document.querySelector(".frontpage-products");
     
 
     for (let i = 0; i < 4; i++) {
-        console.log(jacket[i]);
 
         jacketFrontPageContainer.innerHTML += `
         <div class="frontpage-products-lower"><a href="jacket-specific.html?id=${jacket[i].id}"><img src="${jacket[i].image}" alt="${jacket[i].title}"></a>
