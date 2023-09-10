@@ -22,7 +22,6 @@ const jacketFrontPageContainer = document.querySelector(".frontpage-products");
         </div>`
     } 
     }   catch(error) {
-        console.log("An error has occured!");
         jacketFrontPageContainer.innerHTML = "Something went wrong!";
     }
 }

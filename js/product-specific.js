@@ -39,9 +39,8 @@ const jacketWomenContainerSpecific = document.querySelector(".product-main");
       <p class="product-info">${jacketForWoman.description}</p>
     </div>`;
 
-      console.log(jacketForWoman);
     }catch(error) {
-      console.log("Something is wrong here as well!");
+      jacketWomenContainerSpecific.innerHTML = `<p>Something went wrong here as well!</p>`;
   } 
   }
 

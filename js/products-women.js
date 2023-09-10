@@ -8,6 +8,7 @@ const jacketWomenContainer = document.querySelector(".jackets-for-sale");
       const fetchLoader = document.querySelector(".loader");
       fetchLoader.classList.remove("loader");
 
+
       for (let i = 0; i < 6; i++) {
         console.log(jacketForWomen[i]);
 
@@ -21,7 +22,6 @@ const jacketWomenContainer = document.querySelector(".jackets-for-sale");
       </div>`
     }
     } catch(error) {
-      console.log("Something is wrong");
       jacketWomenContainer.innerHTML = `<p>Something went wrong!</p>`;
     }
   }

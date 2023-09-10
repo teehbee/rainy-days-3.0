@@ -16,8 +16,6 @@ export { getJackets };
 
 //API call for specific jacket
 
-// const specificUrl = "https://api.noroff.dev/api/v1/rainy-days/" + id;
-
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
@@ -32,7 +30,5 @@ async function getJacket() {
 
   return jacketDetails;
   }
-
-
 
   export { getJacket };
