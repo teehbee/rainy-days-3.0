@@ -30,13 +30,12 @@ const jacketWomenContainerSpecific = document.querySelector(".product-main");
           </select>
         </div>
       <div class="purchase-button">
-        <a href="cart.html" class="cta-green">ADD TO CART</a> 
+        <a href="#" class="cta-green">ADD TO CART</a> 
       </div>
       <div class="jacket-specific-h2">
         <h2>About the product</h2>
-      </div>
-      <div class="jacket-specific-info-text">
-      <p class="product-info">${jacketForWoman.description}</p>
+        <p class="product-info">${jacketForWoman.description}</p>
+      </div>      
     </div>`;
 
     }catch(error) {

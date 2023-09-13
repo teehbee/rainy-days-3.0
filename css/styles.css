@@ -19,7 +19,8 @@ a {
 
 .main-header img {
   max-width: 115px;
-  padding: 10px;
+  padding: 10px 20px;
+  margin-left: auto;
 }
 
 .main-header {
@@ -27,9 +28,21 @@ a {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-height: 80px;
   position: relative;
+}
+
+.logo-image {
+  margin-right: auto;
+}
+
+.main-header i {
+  padding: 10px 25px;
+}
+
+.main-header input {
+  padding-right: 10px;
 }
 
 header a {
@@ -50,7 +63,7 @@ nav {
 
 nav li {
   display: block;
-  padding: 10px 10px;
+  padding: 10px 5px;
 }
 
 nav ul {
@@ -399,6 +412,25 @@ header input {
     width: 90%;
     padding-bottom: 20px;
   }
+
+/* Sales page */
+
+.sales-section {
+  height: 100vh;
+  text-align: center;
+}
+
+.sales-section h1 {
+  display: inline-block;
+}
+
+.sales-section p {
+  font-weight: 600;
+}
+
+.sales-section a {
+  text-decoration: underline;
+}
 
 /* Shopping cart */
 
@@ -853,7 +885,7 @@ header input {
 }
 
 .product-info {
-  font-size: 0.6em;
+  font-size: 0.8em;
   text-align: left;
 }
 
@@ -1305,4 +1337,3 @@ footer label {
     margin: auto;
   }
 }
-
